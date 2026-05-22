@@ -129,7 +129,7 @@ uploaded_file = st.file_uploader("📤 Upload a leaf image", type=["jpg", "png"]
 # ------------------------
 # MAIN LOGIC
 # ------------------------
-contents = await uploaded_file.read()
+contents = uploaded_file.read()
 
 if uploaded_file is not None and len(contents) < 1 * 1024 * 1024:
     print("File is less than 1MB")
