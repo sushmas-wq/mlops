@@ -3,6 +3,7 @@ import requests
 from PIL import Image
 import base64
 import io
+from fastapi import FastAPI, UploadFile, File, HTTPException
 # ===========================
 #  INFO
 # ============================
